@@ -1,3 +1,11 @@
+/**
+ * Author: Le Nguyen Minh Hieu
+ * Date: 2025-11-06
+ * License: CC0
+ * Source: me
+ * Description: N-Dimensional Vector
+ * Status: tested
+ */
 template<int D, typename T>
 struct Vec : public vector<Vec<D - 1, T>> {
   static_assert(D >= 1, "Vector dimension must be greater than zero!");
@@ -9,4 +17,5 @@ template<typename T>
 struct Vec<1, T> : public vector<T> {
   Vec(int n = 0, const T& val = T()) : vector<T>(n, val) {
   }
+
 };
