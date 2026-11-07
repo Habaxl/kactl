@@ -37,7 +37,3 @@ struct HLD {
         return answer+st.query(pos[u],pos[v]+1);
     }
 };
-// Cay con u lien tiep: [pos[u],pos[u]+size[u]).
-// Cap nhat duong di: tach cung cac doan, dung LazySeg muc 06.
-// Tong/min/max khong phu thuoc thu tu. Noi chuoi/ma tran can
-// xu ly huong hai nua duong di, KHONG doi phep cong may moc.
